@@ -1,0 +1,30 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+ul {
+    background-color: blueviolet;
+}
+
+.color {
+    background-color: red;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+
+body {
+    font-size: 16px;
+}
+
+#teste {
+    font-size: 20px;
+    font-style: italic ;
+    line-height: 2;
+    text-align: center;
+    text-decoration: underline;
+}
