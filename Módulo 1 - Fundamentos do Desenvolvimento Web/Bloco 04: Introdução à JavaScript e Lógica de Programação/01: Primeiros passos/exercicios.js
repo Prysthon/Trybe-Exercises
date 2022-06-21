@@ -60,3 +60,28 @@ if (a<0 || b<0 || c<0) {
         console.log (false)
     }
 }
+
+// 6. Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+const peca = "Bishops"
+const piece = peca.toLowerCase()
+if (piece === "kings") {
+    console.log ("one square in any direction.")
+}
+else if (piece === "queens") {
+    console.log ("diagonally, horizontally, or vertically any number of squares.")
+}
+else if (piece === "rooks") {
+    console.log ("horizontally or vertically any number of squares.")
+}
+else if (piece === "knights") {
+    console.log ("in an 'L shape.'")
+}
+else if (piece === "bishops") {
+    console.log ("diagonally any number of squares.")
+}
+else if (piece === "knights") {
+    console.log ("vertically forward one square")
+} else {
+    console.log ("piece not found")
+}
+
