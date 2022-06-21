@@ -5,8 +5,8 @@
 // Divisão (a / b)
 // Módulo (a % b)
 // *Dica: Neste link você encontra mais detalhes sobre operadores matemáticos
-const a = 10
-const b = 2
+const a = 10;
+const b = 2;
 console.log (a+b)
 console.log (a-b)
 console.log (a*b)
@@ -14,8 +14,8 @@ console.log (a/b)
 console.log (a%b)
 
 // 2 Faça um programa que retorne o maior de dois números. Defina no começo do programa duas constantes com os valores que serão comparados.
-const a = 10
-const b = 2
+const a = 10;
+const b = 2;
 if (a>b) {
     console.log (a)
 } else {
@@ -23,9 +23,9 @@ if (a>b) {
 }
 
 // 3. Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
-const a = 10
-const b = 2
-const c = 20
+const a = 10;
+const b = 2;
+const c = 20;
 if (a>b && a>c) {
     console.log (a)
 } 
@@ -35,3 +35,13 @@ else if (b>a && b>c) {
     console.log (c)
 }
 
+// 4. Faça um programa que, dado um valor definido numa constante, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
+const a = -10;
+if (a>0) {
+    console.log ("positive")
+}
+else if (a<0) {
+    console.log ("negative")
+} else {
+    console.log ("zero")
+}
