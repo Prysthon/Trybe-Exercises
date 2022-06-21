@@ -21,3 +21,17 @@ if (a>b) {
 } else {
     console.log (b)
 }
+
+// 3. Faça um programa que retorne o maior de três números. Defina no começo do programa três constantes com os valores que serão comparados.
+const a = 10
+const b = 2
+const c = 20
+if (a>b && a>c) {
+    console.log (a)
+} 
+else if (b>a && b>c) {
+    console.log (b)
+} else {
+    console.log (c)
+}
+
