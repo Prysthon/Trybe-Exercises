@@ -153,3 +153,36 @@ const custoReal = custo*1.2
 const lucro = (valor - custoReal)*1000
 
 console.log (lucro)
+
+// 11. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
+const salario = 3000;
+let salarioNovo = 0;
+
+if (salario <= 1556.94) {
+    salarioNovo = salario * (1-0.08);
+}
+else if (salario <= 2594.92) {
+    salarioNovo = salario * (1-0.09);
+}
+else if (salario <= 5189.82) {
+    salarioNovo = salario * (1-0.11);
+} else {
+    salarioNovo = salario - 570.88;
+}
+console.log (salarioNovo)
+
+if (salarioNovo > 4664.68) {
+    salarioNovo = salarioNovo -(salarioNovo*0.075-142.80);
+}
+else if (salarioNovo > 3751.06) {
+    salarioNovo = salarioNovo -(salarioNovo*0.225-636.13);
+}
+else if (salarioNovo > 2826.66) {
+    salarioNovo = salarioNovo -(salarioNovo*0.15-354.80);
+}
+else if (salarioNovo > 1903.99) {
+    salarioNovo = salarioNovo - (salarioNovo*0.075-142.80);
+} else {
+}
+
+console.log (salarioNovo)
