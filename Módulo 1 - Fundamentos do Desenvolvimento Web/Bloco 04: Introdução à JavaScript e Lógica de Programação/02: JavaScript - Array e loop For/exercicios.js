@@ -55,7 +55,7 @@ if (odds === 0) {
 }
 
 // 7. Utilizando for, descubra qual o menor valor contido no array e imprima-o;
-let smaller = 100000;
+let smaller = numbers[0];
 for (index = 0; numbers.length > index; index+=1) {
     if (numbers[index] <= smaller) {
         smaller = numbers[index]
