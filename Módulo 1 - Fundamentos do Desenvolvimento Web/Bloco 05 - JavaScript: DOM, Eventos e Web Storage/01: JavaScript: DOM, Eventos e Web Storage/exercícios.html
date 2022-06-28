@@ -80,8 +80,13 @@ function uppercase() {
     }
 }
 
-uppercase()
 // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+function exibition() {
+    paragraphs = document.getElementsByTagName('p');
+    for (let parag of paragraphs) {
+        console.log (parag.innerText)
+    }
+}
 
     </script>
   </body>
