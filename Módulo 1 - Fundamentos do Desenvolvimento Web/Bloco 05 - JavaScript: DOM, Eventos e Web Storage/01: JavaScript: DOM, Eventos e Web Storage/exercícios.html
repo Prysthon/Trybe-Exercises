@@ -63,16 +63,24 @@ function changeColor() {
 // 3. Crie uma função que mude a cor do quadrado vermelho para branco.
 function changeSquare() {
     let redSquare = document.getElementsByClassName('center-content')[0];
-    redSquare.style.background = 'white'
+    redSquare.style.background = 'white';
 }
 
 // 4. Crie uma função que corrija o texto da tag <h1>.
 function correction() {
     head = document.getElementsByTagName('h1')[0];
-    head.innerText = 'Exercício 5.1 - JavaScript'
+    head.innerText = 'Exercício 5.1 - JavaScript';
 }
 
 // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+function uppercase() {
+    paragraphs = document.getElementsByTagName('p');
+    for (let parag of paragraphs) {
+        parag.innerText = parag.innerText.toUpperCase();
+    }
+}
+
+uppercase()
 // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
     </script>
