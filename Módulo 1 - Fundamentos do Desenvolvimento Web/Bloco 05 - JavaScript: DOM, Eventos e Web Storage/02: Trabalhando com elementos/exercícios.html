@@ -94,7 +94,14 @@
         sec2.append(img)
 
         // 8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-        
+        let list = document.createElement('ul');
+        sec3.appendChild(list);
+        let numbers = ['um', 'dois', 'três', 'quatro', 'cinco','seis','sete','oito','nove','dez'];
+        for (let number of numbers) {
+            valor = document.createElement('li')
+            valor.innerText = number;
+            list.appendChild(valor);
+        }
         // 9. Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
     </script>
