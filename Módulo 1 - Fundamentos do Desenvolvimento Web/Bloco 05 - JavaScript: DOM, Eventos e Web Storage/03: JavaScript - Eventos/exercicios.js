@@ -38,4 +38,18 @@ function createDaysOfTheWeek() {
         ulTag.appendChild(liTag);
     } 
    }
-   addDays(decemberDaysList);
+   addDays();
+
+   /* Exercício 2:
+Implemente uma função que crie dinamicamente um botão com o nome "Feriados".
+    - Sua função deve receber um parâmetro com a string 'Feriados'
+    - Adicione a este botão a ID "btn-holiday"
+    - Adicione este botão como filho/filha da tag <div> com classe "buttons-container" */
+    function holidays(name) {
+        let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
+        let button = document.createElement('button');
+        button.innerText = name;
+        button.id = 'btn-holiday';
+        buttonsContainer.appendChild(button);
+    }
+    holidays('Feriados')
