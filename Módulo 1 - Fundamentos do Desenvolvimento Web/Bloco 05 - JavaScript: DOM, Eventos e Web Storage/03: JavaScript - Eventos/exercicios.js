@@ -41,7 +41,7 @@ function createDaysOfTheWeek() {
    addDays();
 
    /* Exercício 2:
-Implemente uma função que crie dinamicamente um botão com o nome "Feriados".
+    Implemente uma função que crie dinamicamente um botão com o nome "Feriados".
     - Sua função deve receber um parâmetro com a string 'Feriados'
     - Adicione a este botão a ID "btn-holiday"
     - Adicione este botão como filho/filha da tag <div> com classe "buttons-container" */
@@ -77,4 +77,16 @@ Implemente uma função que crie dinamicamente um botão com o nome "Feriados".
     }
     ChangeHolidaysColor()
     
+    /* Exercício 4:
+    Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira". Sua função deve receber como parâmetro a string "Sexta-feira".
+    - Adicione a esse botão o ID "btn-friday";
+    - Adicione esse botão como filho/filha da tag <div> com classe "buttons-container". */
+    function ButtonFriday(name) {
+        let buttonsContainer = document.getElementsByClassName('buttons-container')[0];
+        let button = document.createElement('button');
+        button.innerText = name;
+        button.className = 'btn-friday';
+        buttonsContainer.appendChild(button)
+    }
+    ButtonFriday('Sexta-Feira')
     
