@@ -119,10 +119,13 @@
         }
         
         // 12. Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
-        sec2rem = document.getElementsByClassName('left-content')[0];
-        sec2.removeChild(sec2rem);
-        
+        let sec2rem = document.getElementsByClassName('left-content')[0];
+        elementMain.removeChild(sec2rem);
+
         // 13. Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
+        rightContent = document.getElementsByClassName('right-content')[0];
+        console.log (rightContent)
+        rightContent.style.marginright = 'auto';
 
         // 14. Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
 
