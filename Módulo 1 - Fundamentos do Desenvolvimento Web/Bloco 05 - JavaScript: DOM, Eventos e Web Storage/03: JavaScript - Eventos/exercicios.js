@@ -136,3 +136,18 @@ function createDaysOfTheWeek() {
         myTaskDiv.appendChild(spanContain);
     }
     addTask('cozinhar');
+
+    /* Exercício 8:
+    Implemente uma função que adicione uma legenda com cor para a tarefa.
+    * Essa função deverá receber como parâmetro uma string ('cor') e criar dinamicamente um elemento de tag `<div>` com a classe `task`.
+    O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
+    O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks". */
+    function colorTask (color) {
+        let divFather = document.querySelector ('.my-tasks');
+        let divTag = document.createElement('div');
+        divTag.className = 'task';
+        divTag.style.backgroundColor = color;
+        divFather.appendChild(divTag);
+    }
+
+    colorTask('green');
