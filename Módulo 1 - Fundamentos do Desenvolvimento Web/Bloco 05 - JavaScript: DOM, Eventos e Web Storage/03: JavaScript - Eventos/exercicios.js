@@ -116,11 +116,13 @@ function createDaysOfTheWeek() {
     function mouseOverZoom (event) {
         if (event.target.classList.contains ('day')) {
             event.target.style.fontSize = '30px';
+            event.target.style.fontWeight = '600';
         }
     }
     function mouseOutZoom (event) {
         if (event.target.classList.contains ('day')) {
             event.target.style.fontSize = '20px';
+            event.target.style.fontWeight = '200';
         }
     }
     addEventListener ('mouseover', mouseOverZoom);
