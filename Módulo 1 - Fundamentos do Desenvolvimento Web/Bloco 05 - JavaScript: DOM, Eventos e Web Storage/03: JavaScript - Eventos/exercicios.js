@@ -52,7 +52,7 @@ function createDaysOfTheWeek() {
         button.id = 'btn-holiday';
         buttonsContainer.appendChild(button);
     }
-    holidays('Feriados')
+    holidays('Feriados');
 
     /* Exercício 3:
     Implemente uma função que muda a cor de fundo dos dias que possuem a classe "holiday".
@@ -75,7 +75,7 @@ function createDaysOfTheWeek() {
             }
         })
     }
-    ChangeHolidaysColor()
+    ChangeHolidaysColor();
     
     /* Exercício 4:
     Implemente uma função que crie dinamicamente um botão com o nome "Sexta-feira". Sua função deve receber como parâmetro a string "Sexta-feira".
@@ -88,7 +88,7 @@ function createDaysOfTheWeek() {
         button.className = 'btn-friday';
         buttonsContainer.appendChild(button)
     }
-    ButtonFriday('Sexta-Feira')
+    ButtonFriday('Sexta-Feira');
 
     /* Exercício 5:
     Implemente uma função que modifica o texto exibido nos dias que são Sexta-feira. Adicione ao botão "Sexta-feira" um evento de "click" e modifique o texto a ser exibido nos dias que são sextas-feiras.
@@ -107,11 +107,11 @@ function createDaysOfTheWeek() {
         })
     }
     let fridayDaysArray = [4,11,18,25];
-    modifyFriday(fridayDaysArray)
+    modifyFriday(fridayDaysArray);
 
-    // Exercício 6:
-    // Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-    // Dica - Propriedade: event.target.
+    /* Exercício 6:
+    Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+    Dica - Propriedade: event.target. */
 
     function mouseOverZoom (event) {
         if (event.target.classList.contains ('day')) {
@@ -123,5 +123,16 @@ function createDaysOfTheWeek() {
             event.target.style.fontSize = '20px';
         }
     }
-    addEventListener ('mouseover', mouseOverZoom)
-    addEventListener ('mouseout', mouseOutZoom)
+    addEventListener ('mouseover', mouseOverZoom);
+    addEventListener ('mouseout', mouseOutZoom);
+
+    /* Exercício 7:
+    Implemente uma função que adicione uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+    O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks". */
+    function addTask (task) {
+        let myTaskDiv = document.getElementsByClassName('my-tasks')[0];
+        let spanContain = document.createElement('span');
+        spanContain.innerText = task;
+        myTaskDiv.appendChild(spanContain);
+    }
+    addTask('cozinhar');
