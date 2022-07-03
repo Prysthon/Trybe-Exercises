@@ -171,4 +171,23 @@ function createDaysOfTheWeek() {
     }
     selectTask();
 
-    
+    /* Exercício 10:
+    Implemente uma função que atribua a cor da tarefa ao dia do calendário.
+    Adicione um evento que, ao clicar em um dia do mês no calendário, atribua a esse dia a cor da legenda da sua tarefa selecionada.
+    Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) */
+    function addColorDays () {
+        let days = document.getElementById('days');
+        let task = document.querySelector('.task');
+        let taskSelected = document.getElementsByClassName('task selected');
+        let color = task.style.backgroundColor;
+        days.addEventListener('click', function(event) {
+            if (event.target.style.color !== color && taskSelected.length > 0) {
+                event.target.style.color = color;
+                taskSelected[0].classList.remove ('selected');
+            } else if (event.target.style.color === color) {
+                console.log ('oi')
+                event.target.style.color = 'rgb(119,119,119)';
+            }
+        })
+    }
+    addColorDays();
