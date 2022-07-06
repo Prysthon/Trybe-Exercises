@@ -16,21 +16,21 @@
     <form action="" method="get">
     <!-- 1. O formulário deverá permitir que a pessoa usuária insira os seguintes campos: -->
     <!-- Nome Completo: Limitado entre 10 e 40 caracteres.  -->
-    
     <div class="line-contain">
         <label for="name">
             Nome completo:
-            <input type="text" required min="10" max="40" id="name" name="name" placeholder="Tiago Mello"> 
+            <input type="text" minlength="10" maxlength="40" id="name" name="name" placeholder="Tiago Mello"> 
         </label>
     </div>
+
     <!-- E-mail: Limitado entre 10 e 50 caracteres. -->
     <div class="line-contain">
-        <div>
         <label for="email">
             E-mail:
-            <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com">
+            <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com" minlength="10" maxlength="50">
         </label>
     </div>
+
     <!-- Destino Preferido: 4 opções: Cidade, Campo, Praia, Montanhas. -->
     <div class="line-contain">
         <div>
@@ -50,12 +50,34 @@
                 </label>
         </fieldset>
     </div>
-    
-    <!-- Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
-    Limite de 500 caracteres.
-    Qual a melhor data para realizar sua viagem?
-    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+
+    <!-- Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? Limite de 500 caracteres. -->
+    <div class="line-contain">
+        <label for="text"> 
+            Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+            <textarea name="text" id="text" cols="30" rows="5" maxlength="500"></textarea>
+        </label>
+    </div>
+
+    <!-- Qual a melhor data para realizar sua viagem? -->
+    <div class="line-contain">
+        <label for="date">
+            Melhor data:
+            <input type="date" name="date" id="date">
+        </label>
+    </div>
+
+    <!-- Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
     Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. -->
+    <div>
+        <label for="oportunity">
+            <input type="checkbox" name="promotion" id="oportunity"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        </label>
+        <br>
+        <label for="img">
+            <input type="checkbox" name="img" id="img"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </label>
+    </div>
 
     <div class="line-contain">
     <button type="submit">Enviar</button>
