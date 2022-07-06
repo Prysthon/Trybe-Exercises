@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="form.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,29 +17,50 @@
     <!-- 1. O formulário deverá permitir que a pessoa usuária insira os seguintes campos: -->
     <!-- Nome Completo: Limitado entre 10 e 40 caracteres.  -->
     
-    <div>
+    <div class="line-contain">
         <label for="name">
             Nome completo:
             <input type="text" required min="10" max="40" id="name" name="name" placeholder="Tiago Mello"> 
         </label>
     </div>
-    <br>
     <!-- E-mail: Limitado entre 10 e 50 caracteres. -->
-    <div>
+    <div class="line-contain">
+        <div>
         <label for="email">
             E-mail:
             <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com">
         </label>
     </div>
-    <!-- Destino Preferido:
-    4 opções: Cidade, Campo, Praia, Montanhas.
-    Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+    <!-- Destino Preferido: 4 opções: Cidade, Campo, Praia, Montanhas. -->
+    <div class="line-contain">
+        <div>
+        <fieldset>
+            <legend>Destino Preferido:</legend> 
+                <label for="city-destiny">
+                    <input type="radio" name="destiny" id="city-destiny" value="city"> Cidade
+                </label>
+                <label for="country-destiny">
+                    <input type="radio" name="destiny" id="country-destiny" value="country"> Campo
+                </label>
+                <label for="beach-destiny">
+                    <input type="radio" name="destiny" id="beach-destiny" value="beach"> Praia
+                </label>
+                <label for="mountain-destiny">
+                    <input type="radio" name="destiny" id="mountain-destiny" value="mountain"> Montanhas
+                </label>
+        </fieldset>
+    </div>
+    
+    <!-- Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
     Limite de 500 caracteres.
     Qual a melhor data para realizar sua viagem?
     Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
     Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. -->
 
+    <div class="line-contain">
     <button type="submit">Enviar</button>
+    </div>
+
     </form>
 </body>
 </html>
