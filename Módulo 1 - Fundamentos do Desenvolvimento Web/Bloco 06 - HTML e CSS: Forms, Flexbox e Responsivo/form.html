@@ -12,24 +12,33 @@
         <h1 id="head">TrybeTrip</h1>
     </header>
 
+    <form action="" method="get">
     <!-- 1. O formulário deverá permitir que a pessoa usuária insira os seguintes campos: -->
-    <!-- Nome Completo:
-    Limitado entre 10 e 40 caracteres.  -->
+    <!-- Nome Completo: Limitado entre 10 e 40 caracteres.  -->
+    
     <div>
-        <label for="">
+        <label for="name">
             Nome completo:
-            <input type="text" required> 
+            <input type="text" required min="10" max="40" id="name" name="name" placeholder="Tiago Mello"> 
         </label>
     </div>
-    <!--
-    E-mail:
-    Limitado entre 10 e 50 caracteres.
-    Destino Preferido:
+    <br>
+    <!-- E-mail: Limitado entre 10 e 50 caracteres. -->
+    <div>
+        <label for="email">
+            E-mail:
+            <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com">
+        </label>
+    </div>
+    <!-- Destino Preferido:
     4 opções: Cidade, Campo, Praia, Montanhas.
     Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
     Limite de 500 caracteres.
     Qual a melhor data para realizar sua viagem?
     Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
     Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. -->
+
+    <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
