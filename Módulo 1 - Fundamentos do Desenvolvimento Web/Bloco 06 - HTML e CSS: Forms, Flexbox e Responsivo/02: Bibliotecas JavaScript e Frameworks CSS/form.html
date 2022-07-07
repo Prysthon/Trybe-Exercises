@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="head">TrybeTrip</h1>
+    </header>
+
+    <form action="" method="get">
+    <!-- 1. O formulário deverá permitir que a pessoa usuária insira os seguintes campos: -->
+    <!-- Nome Completo: Limitado entre 10 e 40 caracteres.  -->
+    <div>
+        <label for="name">
+            Nome completo:
+            <input type="text" minlength="10" maxlength="40" id="name" name="name" placeholder="Tiago Mello"> 
+        </label>
+    </div>
+
+    <!-- E-mail: Limitado entre 10 e 50 caracteres. -->
+    <div>
+        <label for="email">
+            E-mail:
+            <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com" minlength="10" maxlength="50">
+        </label>
+    </div>
+
+    <!-- Destino Preferido: 4 opções: Cidade, Campo, Praia, Montanhas. -->
+    <div>
+        <div>
+        <fieldset>
+            <legend>Destino Preferido:</legend> 
+                <label for="city-destiny">
+                    <input type="radio" name="destiny" id="city-destiny" value="city"> Cidade
+                </label>
+                <label for="country-destiny">
+                    <input type="radio" name="destiny" id="country-destiny" value="country"> Campo
+                </label>
+                <label for="beach-destiny">
+                    <input type="radio" name="destiny" id="beach-destiny" value="beach"> Praia
+                </label>
+                <label for="mountain-destiny">
+                    <input type="radio" name="destiny" id="mountain-destiny" value="mountain"> Montanhas
+                </label>
+        </fieldset>
+    </div>
+
+    <!-- Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? Limite de 500 caracteres. -->
+    <div>
+        <label for="text"> 
+            <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+            <textarea name="text" id="text" cols="30" rows="5" maxlength="500"></textarea>
+        </label>
+    </div>
+
+    <!-- Qual a melhor data para realizar sua viagem? -->
+    <div>
+        <label for="date">
+            Melhor data:
+            <input type="date" name="date" id="date">
+        </label>
+    </div>
+
+    <!-- Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. -->
+    <div>
+        <label for="oportunity">
+            <input type="checkbox" name="promotion" id="oportunity"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+        </label>
+        <br>
+        <label for="img">
+            <input type="checkbox" name="img" id="img"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+        </label>
+    </div>
+
+    <!-- 2. Crie um botão para enviar as informações preenchidas. -->
+    <!-- 3. Crie um botão que limpe as informações contidas nos campos; -->
+    <div>
+    <button type="submit" id="send-button">Enviar</button>
+    <button type="reset">Resetar</button>
+    </div>
+    
+    <!-- // 3. Interrompa o comportamento padrão do botão submit utilizando o método preventDefault(). Nossa amiga Carol Silva nos contou um pouco sobre como fazer isso, lembra? -->
+    <script>
+        let form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log(event);
+        })
+    </script>
+</body>
+</html>
