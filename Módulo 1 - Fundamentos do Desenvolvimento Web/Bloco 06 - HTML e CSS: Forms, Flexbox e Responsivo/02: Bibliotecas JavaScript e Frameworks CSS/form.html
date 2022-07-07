@@ -11,7 +11,7 @@
 <body class="container bg-secondary">
 
     <header>
-        <h1 class="display-1 bg-light text-center mt-3 mb-3 rounded">TrybeTrip</h1>
+        <h1 class="display-1 bg-light text-center mt-2 mb-3 rounded">TrybeTrip</h1>
     </header>
 
     <form action="" method="get" class="bg-light rounded px-4 py-3">
@@ -61,19 +61,20 @@
         <input type="date" name="date" id="date" class="ms-3">
     </div>
 
-    <div>
-        <label for="oportunity">
-            <input type="checkbox" name="promotion" id="oportunity"> Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-        </label>
-        <br>
-        <label for="img">
-            <input type="checkbox" name="img" id="img"> Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-        </label>
+    <div class="mb-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="promotion" id="oportunity"> 
+            <label for="oportunity">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="img" id="img" checked> 
+            <label for="img">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        </div>
     </div>
 
     <div>
-    <button type="submit" id="send-button">Enviar</button>
-    <button type="reset">Resetar</button>
+        <button type="submit" id="send-button" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Resetar</button>
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
