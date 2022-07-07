@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TrybeTrip</title>
 </head>
 
 <body class="container bg-secondary">
+
     <header>
         <h1 class="display-1 bg-light text-center mt-3 mb-3 rounded">TrybeTrip</h1>
     </header>
 
     <form action="" method="get" class="bg-light rounded px-4 py-3">
+
     <div class="mb-3">
         <label for="name" class="form-label">Nome completo:</label>
             <input type="text" minlength="10" maxlength="40" id="name" name="name" placeholder="Tiago Mello" class="form-control"> 
     </div>
-    <div class="mb-3">
-        <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com" minlength="10" maxlength="50" class="form-control">
-        
-    </div>
 
-    <div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com" minlength="10" maxlength="50" class="form-control">
+    </div>
+    
+    <div class="mb-3">
         <div>
-        <fieldset>
-            <legend>Destino Preferido:</legend> 
-                <label for="city-destiny">
-                    <input type="radio" name="destiny" id="city-destiny" value="city"> Cidade
-                </label>
-                <label for="country-destiny">
-                    <input type="radio" name="destiny" id="country-destiny" value="country"> Campo
-                </label>
-                <label for="beach-destiny">
-                    <input type="radio" name="destiny" id="beach-destiny" value="beach"> Praia
-                </label>
-                <label for="mountain-destiny">
-                    <input type="radio" name="destiny" id="mountain-destiny" value="mountain"> Montanhas
-                </label>
-        </fieldset>
+            <label class="mb-1">Destino Preferido:</label> 
+        </div>  
+        <div class="form-check form-check-inline">
+            <input type="radio" name="destiny" id="city-destiny" value="city" class="form-check-input">
+            <label for="city-destiny" class="form-check-label">Cidade</label> 
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="destiny" id="country-destiny" value="country" class="form-check-input">
+            <label for="country-destiny" class="form-check-label">Campo</label>
+        </div>
+        <div class="form-check form-check-inline">   
+            <input type="radio" name="destiny" id="beach-destiny" value="beach" class="form-check-input">
+            <label for="beach-destiny" class="form-check-label">Praia</label>
+        </div>
+        <div class="form-check form-check-inline">  
+            <input type="radio" name="destiny" id="mountain-destiny" value="mountain" class="form-check-input">  
+            <label for="mountain-destiny" class="form-check-label">Montanhas</label>
+        </div>
     </div>
 
     <div>
