@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrybeTrip</title>
+</head>
+
+<body class="container bg-secondary">
+
+    <header>
+        <h1 class="display-1 bg-light text-center mt-2 mb-3 rounded">TrybeTrip</h1>
+    </header>
+
+    <form action="" method="get" class="bg-light rounded px-4 py-3">
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Nome completo:</label>
+            <input type="text" minlength="10" maxlength="40" id="name" name="name" placeholder="Tiago Mello" class="form-control"> 
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="tiagomello@gmail.com" minlength="10" maxlength="50" class="form-control">
+    </div>
+
+    <div class="mb-3">
+        <div>
+            <label class="mb-1">Destino Preferido:</label> 
+        </div>  
+        <div class="form-check form-check-inline">
+            <input type="radio" name="destiny" id="city-destiny" value="city" class="form-check-input">
+            <label for="city-destiny" class="form-check-label">Cidade</label> 
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="radio" name="destiny" id="country-destiny" value="country" class="form-check-input">
+            <label for="country-destiny" class="form-check-label">Campo</label>
+        </div>
+        <div class="form-check form-check-inline">   
+            <input type="radio" name="destiny" id="beach-destiny" value="beach" class="form-check-input">
+            <label for="beach-destiny" class="form-check-label">Praia</label>
+        </div>
+        <div class="form-check form-check-inline">  
+            <input type="radio" name="destiny" id="mountain-destiny" value="mountain" class="form-check-input">  
+            <label for="mountain-destiny" class="form-check-label">Montanhas</label>
+        </div>
+    </div>
+
+    <div class="mb-4">  
+        <p class="mb-2">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <div class="form-floating">
+            <textarea class="form-control" name="text" id="text" cols="30" rows="5" maxlength="500"></textarea>
+            <label for="text">Descreva em até 500 caracteres</label>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="date">Melhor data:</label>
+        <input type="date" name="date" id="date" class="ms-3">
+    </div>
+
+    <div class="mb-3">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="promotion" id="oportunity"> 
+            <label for="oportunity">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="img" id="img" checked> 
+            <label for="img">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" id="send-button" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-secondary">Resetar</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        let form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            console.log(event);
+        })
+    </script>
+</body>
+</html>
